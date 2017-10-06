@@ -8,7 +8,7 @@ public class Ex0610 {
 		//mediaArit();
 		//triangulo();
 		//bhaskara();
-		sitFinal();
+		//sitFinal();
 	}
 	
 	public static void mediaArit() {
@@ -95,7 +95,7 @@ public class Ex0610 {
 		
 		double media = (n1 + n2 + n3) / 3;
 		
-		if(media > 7 && faltas <= 15) {
+		if(media >= 7 && faltas <= 15) {
 			System.out.println(nome + ", você foi aprovado!");
 		}else {
 			System.out.println(nome + ", você foi reprovado!");
