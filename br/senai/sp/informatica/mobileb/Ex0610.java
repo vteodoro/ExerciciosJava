@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex0610 {
 	private static Scanner s;
 	public static void main(String[] args) {
-		mediaArit();
+		//mediaArit();
 		//triangulo();
 		//bhaskara();
 		//sitFinal();
