@@ -10,7 +10,7 @@ public class Ex0610Laco {
 		//ex02();
 		//ex03();
 		//ex04();
-		ex05();
+		//ex05();
 	}
 	
 	public static void ex01() {
