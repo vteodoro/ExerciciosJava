@@ -85,15 +85,15 @@ public class Ex0610 {
 		System.out.println("Informe o nome: ");
 		String nome = s.nextLine();
 		System.out.println("Informe a 1ª nota: ");
-		double n1 = s.nextDouble();
+		double media = s.nextDouble();
 		System.out.println("Informe a 2ª nota: ");
-		double n2 = s.nextDouble();
+		media += s.nextDouble();
 		System.out.println("Informe a 3ª nota: ");
-		double n3 = s.nextDouble();
+		media += s.nextDouble();
 		System.out.println("Informe o número de faltas: ");
 		int faltas = s.nextInt();
 		
-		double media = (n1 + n2 + n3) / 3;
+		media /= 3;
 		
 		if(media >= 7 && faltas <= 15) {
 			System.out.println(nome + ", você foi aprovado!");
