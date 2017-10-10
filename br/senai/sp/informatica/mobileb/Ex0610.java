@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex0610 {
 	private static Scanner s;
 	public static void main(String[] args) {
-		//mediaArit();
+		mediaArit();
 		//triangulo();
 		//bhaskara();
 		//sitFinal();
@@ -14,15 +14,15 @@ public class Ex0610 {
 	public static void mediaArit() {
 		s = new Scanner(System.in);
 		System.out.println("Informe a nota: ");
-		double n1 = s.nextDouble();
+		double media = s.nextDouble();
 		System.out.println("Informe a nota: ");
-		double n2 = s.nextDouble();
+		media += s.nextDouble();
 		System.out.println("Informe a nota: ");
-		double n3 = s.nextDouble();
+		media += s.nextDouble();
 		System.out.println("Informe a nota: ");
-		double n4 = s.nextDouble();
+		media += s.nextDouble();
 		
-		double media = (n1 + n2 + n3 + n4)/4;
+		media /= 4;
 		
 		if(media >= 7) {
 			System.out.println(media + "\nAprovado");
