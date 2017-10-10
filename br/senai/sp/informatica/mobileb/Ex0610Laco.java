@@ -10,7 +10,7 @@ public class Ex0610Laco {
 		//ex02();
 		//ex03();
 		//ex04();
-		//ex05();
+		ex05();
 	}
 	
 	public static void ex01() {
@@ -71,6 +71,7 @@ public class Ex0610Laco {
 		for(int i = 1; i != 0; i++) {
 			System.out.println("Informe o salário: ");
 			double sal = s.nextInt();
+			/*
 			if(sal == 0) {
 				break;
 			}else if(sal < 500) {
@@ -79,7 +80,9 @@ public class Ex0610Laco {
 			}else {
 				sal += sal * 0.1;
 				System.out.println("O salário com aumento é: " + sal);
-			}
+			}*/
+			sal = sal * (sal <= 500 ? 1.2 : 1.1);
+			System.out.println("O salário com aumento é: " + sal);
 		}
 		
 		s.close();
