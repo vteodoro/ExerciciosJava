@@ -23,6 +23,8 @@ public class Ex1010 {
 			nome = s.nextLine();
 		}
 
+		//Arrays.sort(lista);
+		
 		for(int i = 0; i < indice ; i++) {
 			for(int j = 0; j < indice-1 ; j++) {
 				if(lista[j].compareTo(lista[j+1]) > 0) {
