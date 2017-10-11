@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class Ex1010 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		
+
 		String[] lista = new String[3];
 		int indice = 0;
-		
+
 		System.out.println("Informe o " + (indice+1) + "º Nome: ");
 		String nome = s.nextLine();
-		
+
 		while(!nome.equals("fim")) {
 			if(indice >= lista.length) {
 				lista = Arrays.copyOf(lista, lista.length + 3);
@@ -22,17 +22,14 @@ public class Ex1010 {
 			System.out.print("Informe o " + (indice+1) + "º Nome: ");
 			nome = s.nextLine();
 		}
-		
+
 		for(int i = 0; i < indice ; i++) {
-			
-			for(int j = 1; j < indice ; j++) {
-				
-				if(lista[i].compareTo(lista[j]) > 0) {
-					String temp = lista[i];
-					lista[i] = lista[j];
-					lista[j] = temp;
+			for(int j = 0; j < indice-1 ; j++) {
+				if(lista[j].compareTo(lista[j+1]) > 0) {
+					String temp = lista[j];
+					lista[j] = lista[j+1];
+					lista[j+1] = temp;
 				}
-				
 			}
 		}
 
@@ -41,7 +38,7 @@ public class Ex1010 {
 			texto += lista[i] + "\n";
 		}
 		System.out.println(texto);
-		
+
 		s.close();
 	}
 }
