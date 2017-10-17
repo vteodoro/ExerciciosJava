@@ -11,6 +11,7 @@ public class Fornecedor {
 		this.id = id;
 		this.endereco = endereco;
 	}
+	
 	public String getNome() {
 		return nome;
 	}
